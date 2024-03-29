@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girish Sai |My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Girish Sai</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" style="font-size: 16px;">About</a></li>
+          <li><a href="#wexperience" style="font-size: 16px;">Experience</a></li>
+          <li><a href="#experience" style="font-size: 16px;">Skills</a></li>
+          <li><a href="#projects" style="font-size: 16px;">Projects</a></li>
+          <li><a href="#contact" style="font-size: 16px;">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Girish Sai</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#wexperience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic_bw.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Girish Sai</h1>
+        <p class="section__text__p2">AI Engineer | Data Scientist | Data Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="openGoogleDrive()">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/girish-sai-thiruvidhula-957252260/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/girishSaiWork'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Profile_flip.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>7+ years <br />AI Engineer | Data Scienetist | Data Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor Of Technology in C.S.E. | JNTU Kakinada<br />Ontario College Graduate Certificate | A.I. and Data Science | Canada</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a proficient AI Engineer, Data Scientist, and Data Engineer with a strong background 
+              in technologies such as Python, TensorFlow, PyTorch, and scikit-learn. My expertise extends 
+              to designing and implementing machine learning models, analyzing large datasets, and 
+              deploying scalable solutions. I have a proven track record of collaborating closely 
+              with stakeholders to develop innovative and effective solutions that address complex 
+              challenges. As a quick learner, I am committed to staying at the forefront of advancements 
+              in artificial intelligence and data science to bring your ideas to fruition. 
+              Let's work together to leverage cutting-edge technologies and turn your data-driven 
+              aspirations into reality!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="wexperience">
+      <p class="section__text__p1">My Work Experience</p>
+      <h1 class="title">Timeline</h1>
+      <div class="main">
+        <div class="container">
+            <ul>
+                <li>
+                    <h3 class="heading">Data Scientist | Sr.Data Engineer | NielsenONE at Value Labs, INDIA</h3>
+                    <p>
+                      Engaged in researching, designing, and analyzing real-time content ratings data. 
+                      Developed a recommendation system incorporating collaborative, content-based, and 
+                      demographics-based approaches.
+                    </p>
+                    <span class="date">Jan 22 - Dec 22</span>
+                    <span class="circle"></span>
+                </li>
+                <li>
+                    <h3 class="heading">Data Engineer | Synchrony Financial at Capgemini, INDIA</h3>
+                    <p>Played a pivotal role in establishing the data lake formation to aggregate data from diverse teams. 
+                      Executed various data transformations and ensured the encryption of sensitive customer information. </p>
+                    <span class="date">May 20 - Dec 21</span>
+                    <span class="circle"></span>
+                </li>
+                <li>
+                    <h3 class="heading">Big Data Engineer | Ericsson Telecommunications at Tata Consultancy Services, INDIA</h3>
+                    <p>Designed and implemented the extraction of valuable insights from machine-generated logs, 
+                      contributing to a yearly revenue of $5.980B.</p>
+                    <span class="date">Apr 19 - Apr 20</span>
+                    <span class="circle"></span>
+                </li>
+                <li>
+                    <h3 class="heading">Data Engineer | CIGNA Health Care at Tata Consultancy Services, INDIA</h3>
+                    <p>
+                      Instrumental in constructing automated, scalable, distributed data solutions for seamless 
+                      data movement across diverse RDBMS systems.</p>
+                    <span class="date">Feb 18 - Mar 19</span>
+                    <span class="circle"></span>
+                </li>
+                <li>
+                  <h3 class="heading">Data Engineer | Bank Of America at Tata Consultancy Services, INDIA</h3>
+                  <p>
+                    Developed the Deposits Data Mining (DDM) serves as authentic data hub for 
+                    deposits related customers of Bank of America. </p>
+                  <span class="date">Jun 15 - Jan 18</span>
+                  <span class="circle"></span>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <section id="experience">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">SKILLS</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">ML Engineer | Data Scientist</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NLP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Open CV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Large Language Models</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Series Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Engineer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hadoop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spark</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hive</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scala</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS|Azure</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Airflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Elastic Search</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Personal</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">American Sign Language Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/girishSaiWork/American-Sign_Language-Detection'"
+              >
+                Github
+              </button>
+              <!-- 
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+              This is a comment in the head section -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sentiment Analysis of Hotel Reviews</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/girishSaiWork/Nemesis_Sentiment_Analysis_Hotel_Reviews'"
+              >
+                Github
+              </button>
+              <!-- 
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+              This is a comment in the head section -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat GPT of Research Papers(WIP)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/girishSaiWork/'"
+              >
+                Github
+              </button>
+              <!-- 
+
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:girishsai.thiruvidhula.work@gmail.com">Get Connected!</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/girish-sai-thiruvidhula-957252260/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#about" style="font-size: 16px;">About</a></li>
+          <li><a href="#wexperience" style="font-size: 16px;">Experience</a></li>
+          <li><a href="#experience" style="font-size: 16px;">Skills</a></li>
+          <li><a href="#projects" style="font-size: 16px;">Projects</a></li>
+          <li><a href="#contact" style="font-size: 16px;">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
